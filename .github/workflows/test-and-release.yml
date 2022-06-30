@@ -50,7 +50,7 @@ jobs:
 
     - name: "Build"
       run: |
-        python -m build
+        python -m build --no-isolation
         git status --ignored
 
     - name: "Publish"
