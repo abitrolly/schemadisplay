@@ -46,7 +46,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         #pip install build
-        pip install git+https://github.com/abitrolly/build.git@patch-1
+        pip install git+https://github.com/abitrolly/build.git@patch-2
 
     - name: "Build"
       run: |
