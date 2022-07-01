@@ -40,7 +40,11 @@ jobs:
     runs-on: "ubuntu-latest"
     needs: "test"
     steps:
-    - uses: "actions/checkout@v3"
+    - run: |
+        pip list
+        python -c "import colorama"
+
+    - uses: actions/checkout@v3
 
     - name: "Install dependencies"
       run: |
